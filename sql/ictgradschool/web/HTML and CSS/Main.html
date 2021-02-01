@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Music Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <div class="grid_container">
+        <div class="navigation_bar">
+            <a href="#" class="navigation_brand">XXX Blog</a>
+
+            <div class="navigation_hamburger">
+                <img src="res/hamburger.png" alt="Hamburger button">
+            </div>
+
+            <ul class="navigation_list">
+                <li><a href="#Register">Register</a></li>
+                <li><a href="#Login">Login</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="introblock"><h1>Fantastic Blog</h1>
+            <h3> This is Fantastic Blog</h3>
+            <img src="something.png">
+        </div>
+
+        <div class="Articles">
+            <img src="article.jpg" alt="article.png">
+           <div class="blog-example1"><h2>blog 1</h2>
+               <p> fhweigwlkeg</p></div>
+            <div class="blog-example2"> <h2>blog 2 </h2>
+                <p>feahfguiwehg</p></div>
+        </div>
+
+        <div id="footer">
+            <span>nice footer</span>
+        </div>
+    </div>
+        <!-- This script allows for revealing and hiding the navigation drawer on small screens when the hamburger
+             button is clicked -->
+        <script type="text/javascript">
+            document.querySelector('.navigation_hamburger').addEventListener('click', function () {
+                document.querySelectorAll('.navigation_list').forEach(nav => nav.classList.toggle('navigation_tray_reveal'));
+            });
+        </script>
+
+    </body>
+</html>
